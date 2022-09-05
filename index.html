@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  <body>
+     
+    <div class="container my-5 mx-auto">
+        <h1 class="text-muted text-center my-4">Weather</h1>
+
+        <form class="change-location my-4 text-muted text-center">
+            <label for="city">Enter the location to check its wheather</label>
+            <input type="text" name="city" class="form-control p-4">
+        </form>
+    <div class="card shadow-lg rounded d-none ">
+        <img class="time" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAADICAYAAADGFbfiAAAAAXNSR0IArs4c6QAAErlJREFUeF7t3VWT47gCBtDM8iwzM8P//xf7uszMzHzr67ru8mgd21E6rWj2pGprHjqylCOtPlumCy+++OI/Gx8CBAgQILCjwAUBsqOYrxMgQIDAiYAAMRAIECBAoEpAgFSxKUSAAAECAsQYIECAAIEqAQFSxaYQAQIECAgQY4AAAQIEqgQESBWbQgQIECAgQIwBAgQIEKgSECBVbAoRIECAgAAxBggQIECgSkCAVLEpRIAAAQICxBggQIAAgSoBAVLFphABAgQICBBjgAABAgSqBARIFZtCBAgQICBAjAECBAgQqBIQIFVsChEgQICAADEGCBAgQKBKQIBUsSlEgAABAgLEGCBAgACBKgEBUsWmEAECBAgIEGOAAAECBKoEBEgVm0IECBAgIECMAQIECBCoEhAgVWwKESBAgIAAMQYIECBAoEpAgFSxKUSAAAECAsQYIECAAIEqAQFSxaYQAQIECAgQY4AAAQIEqgQESBWbQgQIECAgQIwBAgQIEKgSECBVbAoRIECAgAAxBggQIECgSkCAVLEpRIAAAQICxBggQIAAgSoBAVLFphABAgQICBBjgAABAgSqBARIFZtCBAgQICBAjAECBAgQqBIQIFVsChEgQICAADEGCBAgQKBKQIBUsSlEgAABAgLEGCBAgACBKgEBUsWmEAECBAgIEGOAAAECBKoEBEgVm0IECBAgIECMAQIECBCoEhAgVWwKESBAgIAAMQYIECBAoEpAgFSxKUSAAAECAsQYIECAAIEqAQFSxaYQAQIECAgQY4AAAQIEqgQESBWbQgQIECAgQIwBAgQIEKgSECBVbAoRIECAgAAxBggQIECgSkCAVLEpRIAAAQICxBggQIAAgSoBAVLFphABAgQICBBjgAABAgSqBARIFZtCBAgQICBAjAECBAgQqBIQIFVsChEgQICAADEGCBAgQKBKQIBUsSlEgAABAgLEGCBAgACBKgEBUsWmEAECBAgIEGOAAAECBKoEBEgVm0IECBAgIECMAQIECBCoEhAgVWwKESBAgIAAMQYIECBAoEpAgFSxKUSAAAECAsQYIECAAIEqAQFSxaYQAQIECAgQY4AAAQIEqgQESBWbQgQIECAgQIwBAgQIEKgSECBVbAoRIECAgAD5D46BJ598cnPLLbec/PI//vhj884772x++OGH1RJ33HHH5s4779xcvHhxc+WVV56W++uvvzY//fTT5osvvth8++23q7c3fPGGG27Y3H333Zubbrppc9VVV20uXLhw8qe///5789tvv22+/vrrk22nnsvxk9991113bW688cZLfv8///xzYvDLL79svvrqq82XX36588+/5557Num3a6+9dnPFFVeclM92Y5m+j+suY2BowKHGws4/UIEmAgKkCXu7Su+///5NJpNhEtklQK655prNww8/vLn55ptPJ/epX5KJ6fvvv9+8//77m99//33Vj027Eh7jQJoqmCD58MMPqwJqVUMafGmt69C0n3/++cRgzYSfUH7ooYc2+Xfuk4BKQGe7awJ6bZtrxkKDLlBlpYAAqYTrsVj2cB999NFN/ucfPmsD5Lrrrts88sgjJ3vHaz8//vjj5r333tv8+uuvs0USStmTHUJtaftpcya6THi9f+L6+OOPnxzN7fJZY5D+jm3qWPPJZJ8jx/TZXIgcciysaafvHI+AADmevjhoS7Jnn4kqRw/jz9oASfDcfvvtlywrfffdd6dLH1kSy7JW/h2WnjIhZZJ/9913t/62LNk88MADlxx5ZA/7888/P5nMrr766pPtJmCyrDV8spzz9ttvL4bTQVHPYONPPfXUJX0SsywDxi3/ZSK/7bbbTuzTd+OQnTOY6u9sK9vMMljqyDbjn6OT8XJh7D/66KOtv+5QY+EMOG3inAUEyDmDt6ouk3SWiMq9/DUBkgn8wQcfPJ3kMxFlgsm6efm59957N/lvWIr6888/Nx988MHk0UK59z0XOOXedL6bcwFZJuv1k8k7rkOfZBlpbvKeCtv0wZRBlgTTD0MwZCkx30vol5/yCDDLhDkvlpApP4caC7324X+93QLkPzACclSQ5afszZefNQEyPum+ZuLOhJSJZpi8Mmm9+eabk2Fz3333nU6gOfJ4/fXXty6fZI856/nDkcjcRNdDt45d094cHWTinvtkRyDnsAbbLA++9dZblxyJJbyffvrpzfXXX3+yqQTTJ598svn000+3bnptH6/93lDR2rHQQ39p478FBMhlPioymeR/+uHcRfZEEwK5GiefpQDJnv9jjz12Gj5L3882sySS5bLhXEvqzHJTuUebSS7bzydtygT38ccfz/bIeAJb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" >
+            <div class="day-night">
+                <h1></h1>    
+            </div>
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" height="65" alt="">    
+            </div>
+            
+        <div class="text-muted text-center text-uppercase details">
+            <h5 class="my-3">City name</h5>
+            <div class="my-3">Weather Condition</div>
+            <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+   
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="forecast.js"></script>
+<script src="script.js"></script> 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ </body>
+</html>

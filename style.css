@@ -1,0 +1,27 @@
+body{
+background: #52504f;
+letter-spacing: 0.2em;
+font-size: 0.8em;}
+
+.container{
+    max-width: 400px;
+}
+/* .card{
+    position: relative;
+} */
+.icon{
+  width: 100px;
+  height: 90px;
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+  margin-bottom: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-night h1{
+    position: absolute;
+ 
+}
